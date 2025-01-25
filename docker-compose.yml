@@ -1,0 +1,20 @@
+#указывает версию формата файла docker-compose.yml
+    version: '3.8'
+
+    services: # services - основной раздел с описанием всех контейнеров
+      pythonapp:
+       image: python:3.9-slim  # image - указывает на Docker-образ для создания контейнера
+       volumes:
+         - ./pythonapp:/app  # volumes - монтирует директорию с хост-компьютера в директорию контейнера 
+       working_dir: /app   # working_dir - устанавливает рабочую директорию
+       command: python GreatingDateSript.py    # command - указывает какую команду нужно выполнить 
+
+      bash_app:
+        image: bash:latest
+        volumes:
+          - ./bashapp:/app
+        working_dir: /app
+        
+        command: ["bash", "./DateGreetingScript.sh"]
+
+
