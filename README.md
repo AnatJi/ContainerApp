@@ -25,7 +25,7 @@ CMD ["python", "/app/GreatingDateSript.py"]
 
 ```
 
-Важно чтобы исполняемый скрипт находился в той же директории что и докерфайл
+`#RRGGBB Важно чтобы исполняемый скрипт находился в той же директории что и докерфайл`
 
 ##Запуск программы
 
@@ -34,7 +34,7 @@ CMD ["python", "/app/GreatingDateSript.py"]
 
 В нашем случае я назвал образ `container5_7`, он запустил пайтон скрипт который вывел дату и время:
 
-[место для изображения]()
+![image 0f build dokerfile](https://github.com/AnatJi/ContainerApp/blob/docker-directory/ImagesForReport/image_for_doc)
 
 ## Docker-compose:
 
@@ -79,7 +79,7 @@ mkdir pythonapp
 
 Таким образом оба скрипта выполняются в отдельных контейнерах.
 
-[место для изображения]()
+![image of start docker-compose file](https://github.com/AnatJi/ContainerApp/blob/docker-directory/ImagesForReport/image_for_compose)
 
 Для завершения работы можно воспользоваться командой:
 
