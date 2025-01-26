@@ -40,6 +40,18 @@ CMD ["python", "/app/GreatingDateSript.py"]
 
 Докер композ позволяет запускать сразу несколько контейнеров и настраивать их параметры.
 
+схема директорий будет выглядеть примерно так:
+```
+practice_5_7/
+├── docker-compose.yml
+│
+├── pythonapp/
+│   └── GreatingDateSript.py
+│
+└── bashapp/
+	└── DateGreetingScript.sh
+```
+
 создадим две директории для bash-скрипта и python-скрипта:
 
 ```
